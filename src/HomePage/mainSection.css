@@ -1,0 +1,93 @@
+.main-section {
+  background-image: url(../assets/homePage3.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 625px;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.main-section_opacity {
+  background-color: rgb(190, 225, 230);
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-section_title {
+  padding-top: 138px;
+  text-align: center;
+  font-size: 65px;
+  font-weight: 400;
+}
+
+.main-section_text {
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(24, 41, 61, 1);
+  font-weight: 500;
+}
+
+.main-section_text2 {
+  margin: 12px 0 20px 0;
+  font-size: 16px;
+  color: rgba(24, 41, 61, 1);
+}
+
+.main-section-box {
+  padding: 40px 60px;
+  max-width: 459px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-section_badges {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 75%;
+  justify-content: space-between;
+}
+
+.google-play-badges {
+  width: 120px;
+}
+
+.app-store-badges {
+  width: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-section {
+    background-attachment: scroll;
+    min-height: 525px;
+  }
+
+  .main-section_badges {
+    justify-content: center;
+  }
+
+  .main-section_title {
+    font-size: 29px;
+    padding-top: 20px;
+    font-weight: 500;
+  }
+
+  .main-section-box {
+    width: 100%;
+    max-width: 768px;
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-section {
+    min-height: 325px;
+  }
+}

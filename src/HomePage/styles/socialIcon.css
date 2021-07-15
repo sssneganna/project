@@ -1,0 +1,10 @@
+.social-icon_list {
+  list-style: none;
+  display: flex;
+}
+
+.social-icon_link {
+  color: black;
+  margin-right: 20px;
+  font-size: 25px;
+}

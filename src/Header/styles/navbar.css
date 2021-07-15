@@ -1,0 +1,121 @@
+.global-nav {
+  display: flex;
+}
+
+.global-nav_list {
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+
+.global-nav_item {
+  margin-right: 30px;
+  display: flex;
+  padding: 0 10px;
+}
+
+.global-nav_link {
+  color: rgb(37, 60, 87);
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+}
+
+.global-nav_link:hover {
+  color: var(--link-color-hover);
+  transition: color 0.4s ease 0s;
+}
+
+.global-nav_toggle {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  display: none;
+  font-size: 30px;
+  border: none;
+  background: transparent;
+}
+
+.global-nav_logInBtn {
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.global-nav_logInBtn-icon {
+  color: rgb(37, 60, 87);
+  margin-right: 15px;
+}
+
+.global-nav_logInBtn-mobile {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: rgba(37, 60, 87, 1);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .global-nav_toggle {
+    display: inherit;
+  }
+
+  .global-nav {
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 50;
+  }
+
+  .global-nav_list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 30px;
+    padding-left: 30px;
+    transition: transform 0.3s;
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+
+  .global-nav_item {
+    padding-top: 16px;
+    padding-bottom: 15px;
+    margin-right: 0;
+    opacity: 0;
+    transition: opacity 0.3s 0.1s;
+  }
+
+  .global-nav_link {
+    font-size: 25px;
+  }
+
+  .global-nav.global-nav_opened .global-nav_list {
+    transform: scaleX(1);
+  }
+
+  .global-nav.global-nav_opened .global-nav_item {
+    opacity: 1;
+  }
+
+  .global-nav_logInBtn {
+    display: none;
+  }
+
+  .global-nav_logInBtn-mobile {
+    display: inherit;
+    display: flex;
+    align-items: center;
+  }
+}

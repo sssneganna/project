@@ -1,0 +1,217 @@
+.modal-sign-up {
+  position: fixed;
+  z-index: 70;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+
+.modal-body-sign-up {
+  background-color: white;
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.button_close {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  position: relative;
+  border: none;
+}
+
+.button_close::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 2px;
+  top: 50%;
+  right: 50%;
+  background: rgb(65, 65, 65);
+  transform: translate(50%, 0) rotate(45deg);
+}
+
+.button_close::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 2px;
+  right: 50%;
+  background: rgb(65, 65, 65);
+  transform: translate(50%, 0) rotate(-45deg);
+}
+
+.modal-sign-up_title {
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 24px;
+  margin-top: 10px;
+  color: rgb(65, 65, 65);
+  font-weight: 400;
+}
+
+.modal-sign-up_text {
+  margin-bottom: 32px;
+  font-size: 18px;
+  color: rgb(65, 65, 65);
+}
+
+.modal-social-login-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+}
+
+.button-close_alignment {
+  position: fixed;
+  top: 60px;
+  right: 60px;
+}
+
+.modal_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 1px;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  margin-bottom: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-fb {
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+}
+
+.btn-email {
+  margin-top: 16px;
+  border: 1px solid rgb(204, 204, 204);
+  background-color: transparent;
+  font-size: 16px;
+  color: rgb(65, 65, 65);
+}
+
+.btn-email:hover {
+  border: 1px solid rgb(65, 65, 65);
+}
+
+.btn-google {
+  background-color: #4285f4;
+  border: 1px solid #4285f4;
+}
+
+.modal_btn_link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  font-family: Helvetica;
+}
+
+.modal_social-icon {
+  color: #fff;
+  font-size: 23px;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+.modal_social-icon-google {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  border-radius: 1px;
+  position: absolute;
+  top: 8px;
+  left: 15px;
+}
+
+.modal_stripes {
+  position: relative;
+}
+
+.modal_stripes::before {
+  content: "";
+  position: absolute;
+  width: 43%;
+  height: 1px;
+  top: 50%;
+  right: 0;
+  background: rgb(204, 204, 204);
+}
+
+.modal_stripes::after {
+  content: "";
+  position: absolute;
+  width: 43%;
+  height: 1px;
+  top: 50%;
+  left: 0;
+  background: rgb(204, 204, 204);
+}
+
+.modal_stripes-sign-up {
+  position: relative;
+  margin-top: 30px;
+  color: rgb(75, 75, 75);
+}
+
+.modal_stripes-sign-up::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  top: 50%;
+  right: 0;
+  background: rgb(204, 204, 204);
+}
+
+.modal_stripes-sign-up::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  top: 50%;
+  left: 0;
+  background: rgb(204, 204, 204);
+}
+
+.sign-up_fb {
+  color: rgb(55, 94, 138);
+  font-size: 33px;
+}
+
+.sign-up_google {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sign-up-icon_box {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  position: relative;
+  width: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  .button-close_alignment {
+    right: 30px;
+  }
+}

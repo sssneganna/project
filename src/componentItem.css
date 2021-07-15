@@ -1,0 +1,47 @@
+.component-item {
+  position: relative;
+  color: rgb(37, 60, 87);
+  padding: 78px 98px 98px 98px;
+  text-align: start;
+  width: 100%;
+}
+
+.component-item_title {
+  font-weight: normal;
+  font-size: 65px;
+  margin: 0 0 10px 0;
+  line-height: 1.6em;
+}
+
+.component-item_subtitle {
+  font-size: 29px;
+  font-weight: normal;
+  margin-bottom: 31px;
+  max-width: 400px;
+  line-height: 1.6em;
+}
+
+.component-item_text {
+  margin-bottom: 20px;
+  line-height: 1.6em;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .component-item {
+    padding: 50px 30px 130px 30px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .component-item_title {
+    font-size: 33px;
+  }
+  .component-item_subtitle {
+    font-size: 21px;
+  }
+  .component-item_text {
+    font-size: 15px;
+  }
+}

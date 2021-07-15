@@ -1,0 +1,50 @@
+.main-section_form {
+  position: relative;
+  width: 100%;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-section_input {
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+  color: rgba(65, 65, 65, 1);
+  padding: 12px 0;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.country-code_size {
+  width: 40px;
+}
+
+.phone-number_size {
+  width: 140px;
+}
+
+.main-section_input:active {
+  box-shadow: 0 0 1px 2px #3899ec;
+}
+
+.main-section_input:focus {
+  box-shadow: 0 0 1px 2px #3899ec;
+}
+
+.send-btn {
+  color: rgba(255, 255, 255, 1);
+  width: 140px;
+  height: 40px;
+  background-color: rgba(37, 60, 87, 1);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.send-btn:hover {
+  opacity: 0.8;
+}

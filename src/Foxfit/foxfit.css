@@ -1,0 +1,22 @@
+.component-image_item4 {
+  background-image: url(../assets/foxfitPage.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .component-image_item4 {
+    background-attachment: scroll;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .component-image_item4 {
+    height: 200px;
+  }
+}

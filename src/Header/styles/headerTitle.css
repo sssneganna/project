@@ -1,0 +1,17 @@
+.header-global_title {
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  text-decoration: none;
+  color: rgb(37, 60, 87);
+  font-size: 20px;
+  margin-left: 15px;
+  font-weight: normal;
+}
+
+.logo {
+  height: 35px;
+  pointer-events: none;
+}

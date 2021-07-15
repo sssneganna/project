@@ -1,0 +1,46 @@
+.logoFoxfit-conteiner {
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logoFoxfit-flex {
+  display: flex;
+  width: 43%;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+.logoFoxfit-flex:last-child,
+.logoFoxfit-flex:nth-child(5) {
+  margin-bottom: 0;
+}
+
+.logoFoxfit_icon {
+  width: 55px;
+}
+
+.logoFoxFit_text {
+  min-height: 55px;
+  max-width: 101px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: rgb(37, 60, 87);
+}
+
+@media screen and (max-width: 768px) {
+  .logoFoxfit-conteiner {
+    flex-direction: column;
+  }
+
+  .logoFoxfit-flex {
+    width: 100%;
+  }
+
+  .logoFoxfit-flex:nth-child(5) {
+    margin-bottom: 80px;
+  }
+}
