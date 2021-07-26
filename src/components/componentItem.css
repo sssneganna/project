@@ -1,6 +1,6 @@
 .component-item {
   position: relative;
-  color: rgb(37, 60, 87);
+  color: var(--color-blue);
   padding: 78px 98px 98px 98px;
   text-align: start;
   width: 100%;

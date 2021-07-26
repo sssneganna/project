@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ComponentTitle } from "../ComponentTitle";
+import { ComponentTitle } from "../components/ComponentTitle";
 import "./styles/planspricing.css";
 
 const Item = (props) => {

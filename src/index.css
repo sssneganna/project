@@ -1,6 +1,9 @@
 :root {
   --spacing: 8px;
   --link-color-hover: rgb(137, 174, 179);
+  --color-blue: rgb(37, 60, 87);
+  --color-yellow: rgb(238, 255, 66);
+  --color-modal-grey: rgb(65, 65, 65);
 }
 * {
   box-sizing: border-box;
@@ -49,7 +52,7 @@ body {
 }
 
 .button-text {
-  color: rgb(37, 60, 87);
+  color: var(--color-blue);
   font-size: 16px;
   text-align: center;
   margin-left: 15px;
@@ -78,13 +81,13 @@ body {
 }
 
 .component-box_large-title {
-  color: rgb(37, 60, 87);
+  color: var(--color-blue);
   font-size: 65px;
   font-weight: normal;
 }
 
 .component-box_title {
-  color: rgb(37, 60, 87);
+  color: var(--color-blue);
   font-size: 75px;
   font-weight: normal;
 }
@@ -97,7 +100,7 @@ body {
 .main-subtitle {
   font-size: 29px;
   font-weight: 400;
-  color: rgb(37, 60, 87);
+  color: var(--color-blue);
 }
 
 .component-image_item {
@@ -175,7 +178,7 @@ body {
 }
 
 .item_yellow {
-  background-color: rgb(238, 255, 66);
+  background-color: var(--color-yellow);
 }
 
 .item1_alignment {
@@ -233,7 +236,7 @@ body {
 }
 
 .color-btn_dark-blue {
-  background-color: rgb(37, 60, 87);
+  background-color: var(--color-blue);
 }
 
 .color-btn_dark-blue:hover {
@@ -246,16 +249,16 @@ body {
 }
 
 .color-btn_blue:hover {
-  background-color: rgb(238, 255, 66);
+  background-color: var(--color-yellow);
   transition: color 0.4s ease 0s;
 }
 
 .color-btn_yellow {
-  background-color: rgb(238, 255, 66);
+  background-color: var(--color-yellow);
 }
 
 .color-btn_yellow:hover {
-  background-color: rgb(37, 60, 87);
+  background-color: var(--color-blue);
   transition: color 0.4s ease 0s;
 }
 
@@ -321,10 +324,10 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 2px solid rgb(37, 60, 87);
+  border: 2px solid var(--color-blue);
   font-size: 40px;
-  background-color: rgb(238, 255, 66);
-  color: rgb(37, 60, 87);
+  background-color: var(--color-yellow);
+  color: var(--color-blue);
   outline: none;
   cursor: pointer;
   z-index: 40;
@@ -479,6 +482,7 @@ body {
   .component-image_item2 {
     height: 199px;
   }
+
   .component-image_item {
     height: 203px;
   }

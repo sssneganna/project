@@ -26,7 +26,7 @@
 }
 
 .sign-up-form_btn {
-  background-color: rgb(37, 60, 87);
+  background-color: var(--color-blue);
   outline: none;
   cursor: pointer;
   border: none;

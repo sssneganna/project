@@ -1,4 +1,4 @@
-import { ComponentTitle } from "../ComponentTitle";
+import { ComponentTitle } from "../components/ComponentTitle";
 import React from "react";
 import { PaymentCheckountBox } from "./PaymentCheckoutBox";
 

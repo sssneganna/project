@@ -1,5 +1,5 @@
-import { ComponentTitle } from "../ComponentTitle";
-import { ComponentItem } from "../ComponentItem";
+import { ComponentTitle } from "../components/ComponentTitle";
+import { ComponentItem } from "../components/ComponentItem";
 import React from "react";
 import { LogoFoxfit } from "./LogoFoxfit";
 import "./foxfit.css";

@@ -15,7 +15,7 @@
 }
 
 .global-nav_link {
-  color: rgb(37, 60, 87);
+  color: var(--color-blue);
   display: flex;
   text-decoration: none;
   align-items: center;
@@ -48,7 +48,7 @@
 }
 
 .global-nav_logInBtn-icon {
-  color: rgb(37, 60, 87);
+  color: var(--color-blue);
   margin-right: 15px;
 }
 

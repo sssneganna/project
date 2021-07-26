@@ -5,8 +5,8 @@
 .header-info {
   display: flex;
   width: 100%;
-  background-color: rgb(238, 255, 66);
-  color: rgb(37, 60, 87);
+  background-color: var(--color-yellow);
+  color: var(--color-blue);
   justify-content: center;
   text-align: center;
   padding: 12px;

@@ -1,6 +1,6 @@
 import React from "react";
-import { ComponentItem } from "../ComponentItem";
-import { Button } from "./Button";
+import { ComponentItem } from "../components/ComponentItem";
+import { Button } from "../components/Button";
 
 export const MainContent = () => {
   return (

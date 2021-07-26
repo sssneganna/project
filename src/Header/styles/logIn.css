@@ -32,7 +32,7 @@
   height: 2px;
   top: 50%;
   right: 50%;
-  background: rgb(65, 65, 65);
+  background: var(--color-modal-grey);
   transform: translate(50%, 0) rotate(45deg);
 }
 
@@ -42,7 +42,7 @@
   width: 40%;
   height: 2px;
   right: 50%;
-  background: rgb(65, 65, 65);
+  background: var(--color-modal-grey);
   transform: translate(50%, 0) rotate(-45deg);
 }
 
@@ -51,14 +51,14 @@
   line-height: 48px;
   margin-bottom: 24px;
   margin-top: 10px;
-  color: rgb(65, 65, 65);
+  color: var(--color-modal-grey);
   font-weight: 400;
 }
 
 .modal-sign-up_text {
   margin-bottom: 32px;
   font-size: 18px;
-  color: rgb(65, 65, 65);
+  color: var(--color-modal-grey);
 }
 
 .modal-social-login-container {
@@ -99,11 +99,11 @@
   border: 1px solid rgb(204, 204, 204);
   background-color: transparent;
   font-size: 16px;
-  color: rgb(65, 65, 65);
+  color: var(--color-modal-grey);
 }
 
 .btn-email:hover {
-  border: 1px solid rgb(65, 65, 65);
+  border: 1px solid var(--color-modal-grey);
 }
 
 .btn-google {

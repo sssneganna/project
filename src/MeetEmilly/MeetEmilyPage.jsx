@@ -1,10 +1,10 @@
 import React from "react";
-import { ComponentTitle } from "../ComponentTitle";
-import { ComponentItem } from "../ComponentItem";
+import { ComponentTitle } from "../components/ComponentTitle";
+import { ComponentItem } from "../components/ComponentItem";
 import file from "../assets/file.mp4";
-import "../componentItem.css";
+import "../components/componentItem.css";
 import "./meetEmily.css";
-import { Button } from "../HomePage/Button";
+import { Button } from "../components/Button";
 
 export const MeetEmily = () => {
   return (

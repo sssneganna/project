@@ -1,6 +1,6 @@
 import React from "react";
 import { SocialIconBlock } from "./SocialIcons";
-import { Button } from "./Button";
+import { Button } from "../components/Button";
 import "./mainPage.css";
 
 export const MainPage = () => {
