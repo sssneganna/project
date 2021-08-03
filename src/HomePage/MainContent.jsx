@@ -22,7 +22,7 @@ export class MainContent extends React.Component {
             />
           </div>
 
-          <div className="component-image_item"></div>
+          <div className="component-image_item" />
         </section>
 
         <section className="main-content_flex2">
@@ -40,7 +40,7 @@ export class MainContent extends React.Component {
               componentItemBtn="Read More"
             />
           </div>
-          <div className="component-image_item2"></div>
+          <div className="component-image_item2" />
         </section>
       </section>
     );

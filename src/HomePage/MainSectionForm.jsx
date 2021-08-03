@@ -39,7 +39,7 @@ export class MainSectionForm extends React.Component {
           type="tel"
           required
           placeholder="+3"
-        ></input>
+        />
         <input
           value={this.state.phoneNumber}
           onChange={this.onChangePhoneNumber}
@@ -48,7 +48,7 @@ export class MainSectionForm extends React.Component {
           type="tel"
           required
           placeholder="Phone Number"
-        ></input>
+        />
         <button className="send-btn" type="submit">
           Send
         </button>

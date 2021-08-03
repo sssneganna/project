@@ -69,7 +69,7 @@ export class Form extends React.Component {
               className="form_input"
               required
               placeholder="First Name"
-            ></input>
+            />
           </div>
           <div className="form_field">
             <input
@@ -80,7 +80,7 @@ export class Form extends React.Component {
               className="form_input"
               required
               placeholder="Last Name"
-            ></input>
+            />
           </div>
         </div>
         <div className="form-flex">
@@ -93,7 +93,7 @@ export class Form extends React.Component {
               className="form_input"
               required
               placeholder="Email"
-            ></input>
+            />
           </div>
           <div className="form_field">
             <input
@@ -104,7 +104,7 @@ export class Form extends React.Component {
               className="form_input"
               required
               placeholder="Subject"
-            ></input>
+            />
           </div>
         </div>
         <div className="form_field_textarea">
@@ -116,7 +116,7 @@ export class Form extends React.Component {
             className="form_input textarea"
             required
             placeholder="Type your message here..."
-          ></textarea>
+          />
         </div>
 
         <button className="form_button" type="submit">

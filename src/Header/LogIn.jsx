@@ -17,7 +17,7 @@ export class LogIn extends React.Component {
           onClick={() => this.setState({ isOpen: true })}
         >
           <div className={this.props.cNameIcon}>
-            <img src={logoLogIn} alt="logIn"></img>
+            <img src={logoLogIn} alt="logIn" />
           </div>
           <span className={this.props.cNameLink}>{this.props.signUpName}</span>
         </button>
@@ -29,7 +29,7 @@ export class LogIn extends React.Component {
               <div className="modal-social-login-container">
                 <button className="modal_btn btn-fb">
                   <span className="modal_social-icon">
-                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-facebook-square" />
                   </span>
                   <a
                     className="modal_btn_link"
@@ -43,7 +43,7 @@ export class LogIn extends React.Component {
                     className="modal_social-icon-google"
                     src={iconGoogle}
                     alt=""
-                  ></img>
+                  />
                   <a
                     className="modal_btn_link"
                     href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=353985333474-88ga5vak3e1r9jr9pnh4amaj7fa39far.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fusers.wix.com%2Fwix-sm%2Fapi%2Foauth2%2FsocialLogin&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=%7B%22mode%22%3A%22signup%22%2C%22lang%22%3A%22en%22%2C%22provider%22%3A%22google%22%2C%22visitorId%22%3A%22de40042c-cd18-4fbe-a0e1-55fd4df79052%22%2C%22collectionId%22%3A%221039532f-e80d-40e7-81ce-f48281a12078%22%2C%22privacyStatus%22%3A%22PUBLIC%22%2C%22svSession%22%3A%22undefined%22%7D&flowName=GeneralOAuthFlow"
@@ -74,7 +74,7 @@ export class LogIn extends React.Component {
                       <button
                         className="button_close"
                         onClick={() => this.setState({ itisOpen: false })}
-                      ></button>
+                      />
                     </div>
 
                     <div className="modal_stripes-sign-up">or sign up with</div>
@@ -90,7 +90,7 @@ export class LogIn extends React.Component {
                           className="sign-up_google"
                           src={iconGoogle}
                           alt="sign-up_google"
-                        ></img>
+                        />
                       </a>
                     </div>
                   </div>
@@ -100,7 +100,7 @@ export class LogIn extends React.Component {
                 <button
                   className="button_close"
                   onClick={() => this.setState({ isOpen: false })}
-                ></button>
+                />
               </div>
             </div>
           </div>

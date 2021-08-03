@@ -11,7 +11,7 @@ export class MainSection extends React.Component {
         <h2 className="main-section_title">FoxFit on the Go</h2>
         <div className="main-section-box">
           <div>
-            <div className="main-section_opacity"></div>
+            <div className="main-section_opacity" />
             <p className="main-section_text">Join us on mobile!</p>
             <p className="main-section_text2">
               The Spaces by Wix app lets you easily stay in touch and updated
@@ -26,7 +26,7 @@ export class MainSection extends React.Component {
                 className="google-play-badges"
                 src={googlePlay}
                 alt="google-play-badges"
-              ></img>
+              />
             </a>
             <a href="https://play.google.com">
               <img

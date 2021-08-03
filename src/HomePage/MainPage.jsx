@@ -14,7 +14,7 @@ export class MainPage extends React.Component {
           </p>
           <SocialIconBlock />
         </div>
-        <div className="main-page_img"></div>
+        <div className="main-page_img"/>
         <div className="item_btn-alignment-box">
           <div className="item_btn-alignment">
             <Button

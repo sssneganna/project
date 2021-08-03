@@ -14,7 +14,7 @@ export class MeetEmily extends React.Component {
           <ComponentTitle componentTitle="Meet Emily" />
 
           <section className="main-content_flex3 page-content2">
-            <div className="component_image3"></div>
+            <div className="component_image3" />
             <div className="item3_alignment">
               <ComponentItem
                 cNameItem="component-item  item_blue"
@@ -42,7 +42,7 @@ export class MeetEmily extends React.Component {
 
           <section className="component-item_video">
             <video className="video" autoPlay loop muted>
-              <source src={file} type="video/mp4"></source>
+              <source src={file} type="video/mp4" />
             </video>
           </section>
         </section>

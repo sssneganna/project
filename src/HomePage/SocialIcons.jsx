@@ -35,7 +35,7 @@ class SocialLink extends React.Component {
           rel="noopener noreferrer"
           className="social-icon_link"
         >
-          <i className={`fab ${this.iconClass}`} aria-hidden="true"></i>
+          <i className={`fab ${this.iconClass}`} aria-hidden="true" />
         </a>
       </li>
     );
