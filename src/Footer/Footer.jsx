@@ -45,7 +45,7 @@ export class Footer extends React.Component {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <i className="fas fa-chevron-up"></i>
+          <i className="fas fa-chevron-up" />
         </button>
       </footer>
     );
