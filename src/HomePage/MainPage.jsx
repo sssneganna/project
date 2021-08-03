@@ -5,7 +5,7 @@ import "./mainPage.css";
 
 export const MainPage = () => {
   return (
-    <section ClassName="main-page">
+    <section className="main-page">
       <div className="main-page_info">
         <h1 className="main-title">Emily Fox</h1>
         <p className="main-text">Discover Your Power Through Online Coaching</p>
