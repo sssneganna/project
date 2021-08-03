@@ -27,7 +27,7 @@ export class Foxfit extends React.Component {
               </div>
             </div>
           </section>
-          <div className="component-image_item4"></div>
+          <div className="component-image_item4" />
         </section>
       </div>
     );
