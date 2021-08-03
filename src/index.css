@@ -291,6 +291,7 @@ body {
 }
 
 .item_btn-alignment {
+  display: flex;
   position: absolute;
   right: 0;
   bottom: -50px;
