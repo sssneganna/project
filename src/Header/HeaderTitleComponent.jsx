@@ -8,15 +8,17 @@ const titleComponent = {
   urlTitle: "./",
 };
 
-export const HeaderTitleComponent = () => {
-  return (
-    <div className="header-global_title">
-      <Link to={titleComponent.urlTitle}>
-        <img src={logo} className="logo" alt="logo" />
-      </Link>
-      <Link to={titleComponent.urlTitle} className="header-title">
-        {titleComponent.title}
-      </Link>
-    </div>
-  );
-};
+export class HeaderTitleComponent extends React.Component {
+  render() {
+    return (
+      <div className="header-global_title">
+        <Link to={titleComponent.urlTitle}>
+          <img src={logo} className="logo" alt="logo" />
+        </Link>
+        <Link to={titleComponent.urlTitle} className="header-title">
+          {titleComponent.title}
+        </Link>
+      </div>
+    );
+  }
+}

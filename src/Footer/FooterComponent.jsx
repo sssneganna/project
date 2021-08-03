@@ -13,30 +13,32 @@ const footerComponent = {
           San Francisco, CA 94158`,
 };
 
-export const FooterComponent = () => {
-  return (
-    <div id="contact" className="footer-component">
-      <h2 className="footer-component_title">
-        {footerComponent.footerComponentTitle}
-      </h2>
-      <p className="footer-component_text">
-        {footerComponent.footerComponentText}
-      </p>
-      <p className="footer-component_address">
-        {footerComponent.footerComponentAddress}
-      </p>
-      <a
-        className="footer-component_email"
-        href={footerComponent.footerComponentEmail}
-      >
-        <span>{footerComponent.componentEmail}</span>
-      </a>
-      <a
-        className="footer-component_phone"
-        href={footerComponent.footerComponentPhone}
-      >
-        <span>{footerComponent.componentPhone}</span>
-      </a>
-    </div>
-  );
-};
+export class FooterComponent extends React.Component {
+  render() {
+    return (
+      <div id="contact" className="footer-component">
+        <h2 className="footer-component_title">
+          {footerComponent.footerComponentTitle}
+        </h2>
+        <p className="footer-component_text">
+          {footerComponent.footerComponentText}
+        </p>
+        <p className="footer-component_address">
+          {footerComponent.footerComponentAddress}
+        </p>
+        <a
+          className="footer-component_email"
+          href={footerComponent.footerComponentEmail}
+        >
+          <span>{footerComponent.componentEmail}</span>
+        </a>
+        <a
+          className="footer-component_phone"
+          href={footerComponent.footerComponentPhone}
+        >
+          <span>{footerComponent.componentPhone}</span>
+        </a>
+      </div>
+    );
+  }
+}

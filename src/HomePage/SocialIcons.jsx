@@ -20,28 +20,36 @@ const socialIcons = [
   },
 ];
 
-const SocialLink = (props) => {
-  const { href, iconClass } = props;
-  return (
-    <li className="social-icon_item">
-      <a
-        href={href}
-        target="blank"
-        rel="noopener noreferrer"
-        className="social-icon_link"
-      >
-        <i className={`fab ${iconClass}`} aria-hidden="true"></i>
-      </a>
-    </li>
-  );
-};
+class SocialLink extends React.Component {
+  constructor(props) {
+    super(props);
+    this.href = this.props.href;
+    this.iconClass = this.props.iconClass;
+  }
+  render() {
+    return (
+      <li className="social-icon_item">
+        <a
+          href={this.href}
+          target="blank"
+          rel="noopener noreferrer"
+          className="social-icon_link"
+        >
+          <i className={`fab ${this.iconClass}`} aria-hidden="true"></i>
+        </a>
+      </li>
+    );
+  }
+}
 
-export const SocialIconBlock = () => {
-  return (
-    <ul className="social-icon_list">
-      {socialIcons.map(({ href, iconClass }) => (
-        <SocialLink href={href} iconClass={iconClass} key={href} />
-      ))}
-    </ul>
-  );
-};
+export class SocialIconBlock extends React.Component {
+  render() {
+    return (
+      <ul className="social-icon_list">
+        {socialIcons.map(({ href, iconClass }) => (
+          <SocialLink href={href} iconClass={iconClass} key={href} />
+        ))}
+      </ul>
+    );
+  }
+}

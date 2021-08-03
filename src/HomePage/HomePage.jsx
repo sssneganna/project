@@ -13,19 +13,21 @@ const mainSubtitle = {
   name: "As Featured On",
 };
 
-export const HomePage = () => {
-  return (
-    <div className="main-container">
-      <MainPage />
-      <MainContent />
-      <section className="component-box_large">
-        <h2 className="component-box_large-title">{mainLargeTitle.name}</h2>
-      </section>
-      <div className="main-content_subtitle">
-        <h2 className="main-subtitle">{mainSubtitle.name}</h2>
+export class HomePage extends React.Component {
+  render() {
+    return (
+      <div className="main-container">
+        <MainPage />
+        <MainContent />
+        <section className="component-box_large">
+          <h2 className="component-box_large-title">{mainLargeTitle.name}</h2>
+        </section>
+        <div className="main-content_subtitle">
+          <h2 className="main-subtitle">{mainSubtitle.name}</h2>
+        </div>
+        <LogosFitness />
+        <MainSection />
       </div>
-      <LogosFitness />
-      <MainSection />
-    </div>
-  );
-};
+    );
+  }
+}

@@ -29,18 +29,20 @@ const logoFitnessIcons = [
   },
 ];
 
-export const LogosFitness = () => {
-  return (
-    <section className="logos-fitness-section">
-      <ul className="logos-fitness-section_list">
-        {logoFitnessIcons.map((item, index) => {
-          return (
-            <li key={index} className="logos-fitness-section_item">
-              <img src={item.img} alt={item.alt} />
-            </li>
-          );
-        })}
-      </ul>
-    </section>
-  );
-};
+export class LogosFitness extends React.Component {
+  render() {
+    return (
+      <section className="logos-fitness-section">
+        <ul className="logos-fitness-section_list">
+          {logoFitnessIcons.map((item, index) => {
+            return (
+              <li key={index} className="logos-fitness-section_item">
+                <img src={item.img} alt={item.alt} />
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    );
+  }
+}

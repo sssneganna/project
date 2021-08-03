@@ -3,36 +3,38 @@ import { Link } from "react-router-dom";
 import { ComponentTitle } from "../components/ComponentTitle";
 import "./styles/planspricing.css";
 
-const Item = (props) => {
-  return (
-    <li className="item">
-      <div className="item_container">
-        <h2 className="item_title">{props.item.title}</h2>
-        <div className="item_value">{props.item.value}</div>
-        <div className="item_price-box">
-          <div className="item_currency">{props.item.currency}</div>
-          <div className="item_price">{props.item.price}</div>
+class Item extends React.Component {
+  render() {
+    return (
+      <li className="item">
+        <div className="item_container">
+          <h2 className="item_title">{this.props.item.title}</h2>
+          <div className="item_value">{this.props.item.value}</div>
+          <div className="item_price-box">
+            <div className="item_currency">{this.props.item.currency}</div>
+            <div className="item_price">{this.props.item.price}</div>
+          </div>
+          <div className="item_text1">{this.props.item.text1}</div>
+          <div className="item_text2">{this.props.item.text2}</div>
+          <div className="item_text3">{this.props.item.text3}</div>
+          <button
+            className="item_btn"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            <Link to={this.props.item.link} className="item_link">
+              {this.props.item.textButton}
+            </Link>
+          </button>
         </div>
-        <div className="item_text1">{props.item.text1}</div>
-        <div className="item_text2">{props.item.text2}</div>
-        <div className="item_text3">{props.item.text3}</div>
-        <button
-          className="item_btn"
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-        >
-          <Link to={props.item.link} className="item_link">
-            {props.item.textButton}
-          </Link>
-        </button>
-      </div>
-      <div className="item_price-box2">
-        <div className="item_text4">{props.item.text4}</div>
-      </div>
-    </li>
-  );
-};
+        <div className="item_price-box2">
+          <div className="item_text4">{this.props.item.text4}</div>
+        </div>
+      </li>
+    );
+  }
+}
 
 export class Plans extends React.Component {
   useState = {
